@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/styles.css" />
+    <title>Radio Podcasts</title>
+  </head>
+  <body class="container">
+    <h1>Radio Podcasts</h1>
+    <div>
+      <input
+        id="inputCurrentFrequency"
+        type="text"
+        value="87.5"
+        disabled
+        readonly
+      />
+    </div>
+    <div>
+      <i id="arrowLeft" class="arrow left"></i>
+      <input
+        id="rangeFrequencies"
+        type="range"
+        max="108"
+        min="87.5"
+        value="87.5"
+        step="0.1"
+      />
+      <i id="arrowRight" class="arrow right"></i>
+    </div>
+    <p id="divPodcast">No podcasts found!</p>
+    <script defer src="./js/podcasts.js"></script>
+    <script defer src="./js/script.js"></script>
+  </body>
+</html>
